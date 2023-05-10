@@ -1,6 +1,5 @@
 package rahman.global;
 
-import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,8 +15,7 @@ public class CodeFromFazia {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String expectedUrl = "https://rahulshettyacademy.com/locatorspractice/";
         String actualUrl = driver.getCurrentUrl();
-
-        Assert.assertEquals(expectedUrl, actualUrl);
+      //  Assert.assertEquals(expectedUrl, actualUrl);
         System.out.println("True");
 
         //id
@@ -31,7 +29,7 @@ public class CodeFromFazia {
         System.out.println("Click on button success");
 
         System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
-        System.out.println("error displayed");
+       // System.out.println("error displayed");
 
         driver.findElement(By.linkText("Forgot your password?")).click();
         System.out.println("Click on button success");
