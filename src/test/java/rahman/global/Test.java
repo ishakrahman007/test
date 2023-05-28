@@ -21,7 +21,7 @@ public class Test {
         String expectedURL = "https://rahulshettyacademy.com/AutomationPractice/";
 
         Assert.assertEquals(currentURL,expectedURL);
-       // System.out.println("Land is success");
+       System.out.println("Land is success");
 
         driver.findElement(By.id("checkBoxOption1")).click();
         System.out.println("On checkBoxOption1 click is success");
